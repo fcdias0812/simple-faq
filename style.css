@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* CORES */
+    --link: #4E80EE;
+    --black: #030616;
+    --divisor: #D2D5DA;
+    --background: #F8FAFC;
+    --white: #FFFFFF;
+
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+/* TIPOGRAFIA */
+.heading{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.heading-2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.body-text{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.link{
+    color: var(--link);
+    text-decoration: none;
+}
+
+/* HEADER */
+.header{
+    width: 40%;
+    height: 150px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* QUESTIONS */
+.container{
+    width: 100%;
+    background-color: var(--background);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.questions{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li, ol li{
+    margin-left: 20px;
+}
+
+/* DIVISOR */
+.divisor{
+    width: 100%;
+    border: 1px solid var(--divisor);
+    margin: 30px 0;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 1200px){
+    .header{
+        width: 100%;
+    }
+    .questions{
+        width: 70%;
+    }
+}
+
+@media(max-width: 690px){
+    .header{
+        padding: 0 30px;
+        height: auto;
+    }
+    .questions{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 525px){
+    .header{
+        text-align: center;
+    }
+}
